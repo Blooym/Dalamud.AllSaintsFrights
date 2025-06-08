@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Dalamud.NET.Sdk/12.0.2">
+  <!-- Project Configuration -->
+  <PropertyGroup>
+    <AssemblyName>AllSaintsFrights</AssemblyName>
+    <Version>0.1.0.0</Version>
+    <PackageProjectUrl>https://github.com/Blooym/Dalamud.AllSaintsFrights</PackageProjectUrl>
+  </PropertyGroup>
+
+  <!-- Build Configuration -->
+  <PropertyGroup>
+    <OutputPath>bin\x64\$(Configuration)\</OutputPath>
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="SixLabors.ImageSharp" Version="3.1.9" />
+    <PackageReference Include="System.Windows.Extensions" Version="9.0.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Jumpscares\packs\**\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>jumpscares\%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </Content>
+  </ItemGroup>
+</Project>
