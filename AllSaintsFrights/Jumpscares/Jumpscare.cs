@@ -6,7 +6,7 @@ namespace AllSaintsFrights.Jumpscares
 {
     internal enum JumpscarePack
     {
-        FNAF2,
+        FNAF,
     }
 
     internal sealed class Jumpscare : IDisposable

@@ -10,7 +10,7 @@ namespace AllSaintsFrights.Jumpscares
 
         private readonly List<Jumpscare> jumpscares =
         [
-            new Jumpscare(gifPath: Path.Combine(assetsBasePath, "fnaf2", "witheredfoxy", "jumpscare.gif"), soundPath: Path.Combine(assetsBasePath, "fnaf2", "jumpscare_sfx.wav"), pack: JumpscarePack.FNAF2),
+            new Jumpscare(gifPath: Path.Combine(assetsBasePath, "fnaf2", "witheredfoxy", "jumpscare.gif"), soundPath: Path.Combine(assetsBasePath, "fnaf2", "jumpscare_sfx.wav"), pack: JumpscarePack.FNAF),
         ];
 
         public Jumpscare GetRandomJumpscare()

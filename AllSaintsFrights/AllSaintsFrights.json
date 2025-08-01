@@ -2,7 +2,7 @@
   "Author": "Blooym",
   "Name": "All Saints' Frights",
   "InternalName": "AllSaintsFrights",
-  "Punchline": "Scare yourself on configurable but random intervals with jumpscares",
-  "Description": "All Saints' Frights is a plugin that plays random jumpscares from various games at configurable but random intervals",
+  "Punchline": "Scare yourself with random jumpscares with configurable intervals",
+  "Description": "All Saints' Frights is a plugin that plays random jumpscares on a configurable random interval",
   "RepoUrl": "https://github.com/Blooym/Dalamud.AllSaintsFrights"
 }

@@ -57,9 +57,9 @@ namespace AllSaintsFrights.UserInterface.Windows
             ImGui.Dummy(new Vector2(0, 10));
 
             // Jumpscare Options
-            ImGui.TextDisabled("Jumpscare Options");
+            ImGui.TextDisabled("Jumpscare Packs");
             ImGui.Separator();
-            using (var combo = ImRaii.Combo("Enabled Jumpscare Packs", $"{Plugin.Configuration.EnabledJumpscarePacks.Count} Jumpscare Packs"))
+            using (var combo = ImRaii.Combo("##JumpscarePacksCombo", $"{Plugin.Configuration.EnabledJumpscarePacks.Count} Enabled Jumpscare Pack(s)"))
             {
                 if (combo)
                 {
@@ -85,7 +85,7 @@ namespace AllSaintsFrights.UserInterface.Windows
             ImGui.Dummy(new Vector2(0, 10));
 
             // Testing Options
-            ImGui.TextDisabled("Testing Options");
+            ImGui.TextDisabled("Testing");
             ImGui.Separator();
             if (ImGui.Button("Play Test Jumpscare"))
             {
