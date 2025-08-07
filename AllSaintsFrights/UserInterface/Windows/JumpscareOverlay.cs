@@ -3,8 +3,8 @@ using System.IO;
 using System.Threading.Tasks;
 using System.Timers;
 using AllSaintsFrights.Jumpscares;
+using Dalamud.Bindings.ImGui;
 using Dalamud.Interface.Windowing;
-using ImGuiNET;
 
 namespace AllSaintsFrights.UserInterface.Windows
 {

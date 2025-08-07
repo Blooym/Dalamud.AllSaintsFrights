@@ -1,10 +1,10 @@
 using System;
 using System.Numerics;
 using AllSaintsFrights.Jumpscares;
+using Dalamud.Bindings.ImGui;
 using Dalamud.Interface.Utility;
 using Dalamud.Interface.Utility.Raii;
 using Dalamud.Interface.Windowing;
-using ImGuiNET;
 
 namespace AllSaintsFrights.UserInterface.Windows
 {
@@ -35,7 +35,7 @@ namespace AllSaintsFrights.UserInterface.Windows
             ImGui.TextWrapped("Control the minimum and maximum intervals between jumpscares. A value will be randomly chosen between these two values each time a jumpscare plays.");
             ImGui.Spacing();
             ImGui.Text("Minimum Interval (minutes):");
-            if (ImGui.InputInt("##MinimumInterval", ref minInterval, 1, 5, ImGuiInputTextFlags.EnterReturnsTrue))
+            if (ImGui.InputInt("##MinimumInterval", ref minInterval, 1, 5, default, ImGuiInputTextFlags.EnterReturnsTrue))
             {
                 if (minInterval > 0 && minInterval <= maxInterval)
                 {
@@ -45,7 +45,7 @@ namespace AllSaintsFrights.UserInterface.Windows
                 }
             }
             ImGui.Text("Maximum Interval (minutes):");
-            if (ImGui.InputInt("##MaximumInterval", ref maxInterval, 1, 5, ImGuiInputTextFlags.EnterReturnsTrue))
+            if (ImGui.InputInt("##MaximumInterval", ref maxInterval, 1, 5, default, ImGuiInputTextFlags.EnterReturnsTrue))
             {
                 if (maxInterval >= minInterval && maxInterval > 0)
                 {

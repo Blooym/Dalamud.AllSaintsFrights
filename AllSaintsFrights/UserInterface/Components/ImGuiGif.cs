@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Numerics;
 using System.Threading.Tasks;
+using Dalamud.Bindings.ImGui;
 using Dalamud.Interface.Textures;
 using Dalamud.Interface.Textures.TextureWraps;
-using ImGuiNET;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.PixelFormats;
 
@@ -82,7 +82,7 @@ namespace AllSaintsFrights.UserInterface.Components
             if (this.frameTimer <= 0.0f)
                 this.frameTimer = delay;
 
-            ImGui.Image(texture.ImGuiHandle, size);
+            ImGui.Image(texture.Handle, size);
 
             if (this.globalFrameCount == Plugin.PluginInterface.UiBuilder.FrameCount)
                 return;
